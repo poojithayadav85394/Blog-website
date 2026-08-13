@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyBlog - Explore Ideas</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            My<span>Blog</span>
+        </div>
+
+        <nav class="navbar" id="navbar">
+
+            <a href="#home">Home</a>
+            <a href="#blog">Blog</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <div class="header-right">
+
+            <div class="search-box">
+
+                <input type="text"
+                    id="searchInput"
+                    placeholder="Search blogs...">
+
+                <button id="searchBtn">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                WELCOME TO MY BLOG
+            </p>
+
+            <h1>
+                Ideas, Stories &amp;
+                <span>Inspiration</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover useful articles about technology,
+                education, travel, health and lifestyle.
+            </p>
+
+            <a href="#blog" class="primary-btn">
+                Read Latest Posts
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- FEATURED BLOGS -->
+
+        <section class="section" id="blog">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">FEATURED</p>
+                    <h2>Featured Blog Posts</h2>
+                </div>
+
+                <p>
+                    Explore our latest and most interesting articles.
+                </p>
+
+            </div>
+
+
+            <div class="content-layout">
+
+                <!-- BLOG POSTS -->
+
+                <div class="posts-area">
+
+                    <div class="blog-grid" id="blogGrid">
+
+
+                        <!-- BLOG 1 -->
+
+                        <article class="blog-card">
+
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                                alt="Technology">
+
+                            <div class="blog-content">
+
+                                <span class="category">
+                                    Technology
+                                </span>
+
+                                <h3>
+                                    How Technology Is Changing Our World
+                                </h3>
+
+                                <p>
+                                    Explore how modern technology is
+                                    transforming education, business and
+                                    everyday life.
+                                </p>
+
+                                <div class="post-info">
+
+                                    <span>
+                                        <i class="fa-regular fa-user"></i>
+                                        Admin
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        Aug 8, 2026
+                                    </span>
+
+                                </div>
+
+                                <button class="read-more"
+                                    data-title="How Technology Is Changing Our World">
+
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- BLOG 2 -->
+
+                        <article class="blog-card">
+
+                            <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80"
+                                alt="Programming">
+
+                            <div class="blog-content">
+
+                                <span class="category">
+                                    Programming
+                                </span>
+
+                                <h3>
+                                    Beginner's Guide to Programming
+                                </h3>
+
+                                <p>
+                                    Learn the basics of programming and
+                                    understand how to start your coding journey.
+                                </p>
+
+                                <div class="post-info">
+
+                                    <span>
+                                        <i class="fa-regular fa-user"></i>
+                                        Alex
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        Aug 6, 2026
+                                    </span>
+
+                                </div>
+
+                                <button class="read-more"
+                                    data-title="Beginner's Guide to Programming">
+
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- BLOG 3 -->
+
+                        <article class="blog-card">
+
+                            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+                                alt="Travel">
+
+                            <div class="blog-content">
+
+                                <span class="category">
+                                    Travel
+                                </span>
+
+                                <h3>
+                                    Beautiful Places You Should Visit
+                                </h3>
+
+                                <p>
+                                    Discover amazing destinations and useful
+                                    travel tips for your next adventure.
+                                </p>
+
+                                <div class="post-info">
+
+                                    <span>
+                                        <i class="fa-regular fa-user"></i>
+                                        Sarah
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        Aug 4, 2026
+                                    </span>
+
+                                </div>
+
+                                <button class="read-more"
+                                    data-title="Beautiful Places You Should Visit">
+
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- BLOG 4 -->
+
+                        <article class="blog-card">
+
+                            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80"
+                                alt="Food">
+
+                            <div class="blog-content">
+
+                                <span class="category">
+                                    Food
+                                </span>
+
+                                <h3>
+                                    Simple Healthy Food Habits
+                                </h3>
+
+                                <p>
+                                    Learn simple habits that can help you
+                                    make healthier food choices every day.
+                                </p>
+
+                                <div class="post-info">
+
+                                    <span>
+                                        <i class="fa-regular fa-user"></i>
+                                        Emma
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        Aug 2, 2026
+                                    </span>
+
+                                </div>
+
+                                <button class="read-more"
+                                    data-title="Simple Healthy Food Habits">
+
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- BLOG 5 -->
+
+                        <article class="blog-card">
+
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+                                alt="Education">
+
+                            <div class="blog-content">
+
+                                <span class="category">
+                                    Education
+                                </span>
+
+                                <h3>
+                                    Smart Study Tips for Students
+                                </h3>
+
+                                <p>
+                                    Practical study techniques that can help
+                                    students learn more effectively.
+                                </p>
+
+                                <div class="post-info">
+
+                                    <span>
+                                        <i class="fa-regular fa-user"></i>
+                                        David
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        Jul 30, 2026
+                                    </span>
+
+                                </div>
+
+                                <button class="read-more"
+                                    data-title="Smart Study Tips for Students">
+
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- BLOG 6 -->
+
+                        <article class="blog-card">
+
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80"
+                                alt="Health">
+
+                            <div class="blog-content">
+
+                                <span class="category">
+                                    Health
+                                </span>
+
+                                <h3>
+                                    Building a Healthy Lifestyle
+                                </h3>
+
+                                <p>
+                                    Simple lifestyle habits that can support
+                                    your overall health and wellbeing.
+                                </p>
+
+                                <div class="post-info">
+
+                                    <span>
+                                        <i class="fa-regular fa-user"></i>
+                                        Olivia
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        Jul 28, 2026
+                                    </span>
+
+                                </div>
+
+                                <button class="read-more"
+                                    data-title="Building a Healthy Lifestyle">
+
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SIDEBAR -->
+
+                <aside class="sidebar">
+
+
+                    <!-- SIDEBAR SEARCH -->
+
+                    <div class="sidebar-box">
+
+                        <h3>Search</h3>
+
+                        <div class="sidebar-search">
+
+                            <input type="text"
+                                id="sidebarSearch"
+                                placeholder="Search...">
+
+                            <button id="sidebarSearchBtn">
+                                <i class="fa-solid fa-search"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- POPULAR POSTS -->
+
+                    <div class="sidebar-box">
+
+                        <h3>Popular Posts</h3>
+
+                        <div class="popular-post">
+
+                            <span>01</span>
+
+                            <div>
+                                <h4>Future of Artificial Intelligence</h4>
+                                <small>Technology</small>
+                            </div>
+
+                        </div>
+
+                        <div class="popular-post">
+
+                            <span>02</span>
+
+                            <div>
+                                <h4>Best Study Techniques</h4>
+                                <small>Education</small>
+                            </div>
+
+                        </div>
+
+                        <div class="popular-post">
+
+                            <span>03</span>
+
+                            <div>
+                                <h4>Travel Tips for Beginners</h4>
+                                <small>Travel</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CATEGORIES -->
+
+                    <div class="sidebar-box">
+
+                        <h3>Categories</h3>
+
+                        <ul class="side-categories">
+
+                            <li>
+                                <span>Technology</span>
+                                <span>12</span>
+                            </li>
+
+                            <li>
+                                <span>Education</span>
+                                <span>8</span>
+                            </li>
+
+                            <li>
+                                <span>Travel</span>
+                                <span>7</span>
+                            </li>
+
+                            <li>
+                                <span>Health</span>
+                                <span>6</span>
+                            </li>
+
+                            <li>
+                                <span>Food</span>
+                                <span>5</span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- TAGS -->
+
+                    <div class="sidebar-box">
+
+                        <h3>Tags</h3>
+
+                        <div class="tags">
+
+                            <span>Web</span>
+                            <span>AI</span>
+                            <span>Java</span>
+                            <span>Study</span>
+                            <span>Travel</span>
+                            <span>Food</span>
+                            <span>Health</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SOCIAL -->
+
+                    <div class="sidebar-box">
+
+                        <h3>Follow Us</h3>
+
+                        <div class="social-links">
+
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories-section"
+            id="categories">
+
+            <div class="section-heading center">
+
+                <p class="section-label">
+                    EXPLORE
+                </p>
+
+                <h2>Browse Categories</h2>
+
+                <p>
+                    Find articles based on your interests.
+                </p>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <button class="category-card"
+                    data-category="Technology">
+
+                    <i class="fa-solid fa-laptop-code"></i>
+
+                    <h3>Technology</h3>
+
+                    <p>Latest technology trends</p>
+
+                </button>
+
+
+                <button class="category-card"
+                    data-category="Education">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <h3>Education</h3>
+
+                    <p>Learning and study tips</p>
+
+                </button>
+
+
+                <button class="category-card"
+                    data-category="Travel">
+
+                    <i class="fa-solid fa-plane"></i>
+
+                    <h3>Travel</h3>
+
+                    <p>Places and travel guides</p>
+
+                </button>
+
+
+                <button class="category-card"
+                    data-category="Health">
+
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                    <h3>Health</h3>
+
+                    <p>Healthy lifestyle ideas</p>
+
+                </button>
+
+
+                <button class="category-card"
+                    data-category="Food">
+
+                    <i class="fa-solid fa-utensils"></i>
+
+                    <h3>Food</h3>
+
+                    <p>Recipes and food ideas</p>
+
+                </button>
+
+
+                <button class="category-card"
+                    data-category="Lifestyle">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <h3>Lifestyle</h3>
+
+                    <p>Ideas for better living</p>
+
+                </button>
+
+            </div>
+
+        </section>
+  
